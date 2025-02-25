@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: #fff;
+    --bs-nav-link-hover-color: gray;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #4278c8;
+}
+
+.navbar-nav:hover {
+    --bs-nav-link-color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+nav .login {
+    display: flex;
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 8px;
+    align-items: end;
+}
+
+main {
+    padding-top: 3.7rem;
+}
+
+
+section {
+    height: 100vh;
+}
+
+.promocoes {
+    justify-content: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+aside ul {
+    list-style: none;
+}
+
+ol, ul {
+    padding: 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    border-bottom: 4px solid #007bff;
+}
+
+section h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.carousel-puro-container {
+    width: 94%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+.carousel-puro {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.8s ease-in-out;
+}
+
+.item-carousel-puro {
+    text-align: center;
+    background: #ddd;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-carousel-puro img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.item-carousel-puro button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: none;
+    width: 105%;
+    position: relative;
+    top: 50%;
+    left: -6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.marcas {
+    height: auto;
+    position: relative;
+}
+
+
+.marcas img {
+    width: 5rem;
+    height: 4rem;
+}
+
+.marcas p {
+    padding-bottom: 3rem;
+}
+
+.marcas-container {
+    position: relative;
+}
+
+.carousel-marcas {
+    padding-left: 13rem;
+    margin-bottom: 3rem;
+}
+
+.buttons-marcas {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.buttons-marcas button {
+    border: none;
+    background-color: transparent;
+}
+
+.carousel-marcas {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: 63rem;
+    overflow: hidden;
+}
+
+.item-shop {
+    width: 15rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-left: 0.9rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-shop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-shop img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+
+.item-shop h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.item-shop p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.item-shop button {
+    width: 100%;
+    background-color: #007bff96;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-shop button:hover {
+    background-color: #007bff;
+}
+
+.carousel-inner .carousel-item {
+    display: none;
+}
+
+.carousel-inner .carousel-item.active {
+    display: flex;
+}
+
+.vendas {
+    display: flex;
+}
+
+.navegacao-paginas {
+    display: flex;
+    padding-top: 1.8rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navegacao-paginas button {
+    padding: 7px 14px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+footer{
+    height: 25rem;
+    background-color: black;
+    padding: 2rem 3rem;
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+
+footer h2 {
+    width: 10rem;
+}
+
+footer ul {
+    width: 15%;
+    list-style: none;
+}
+
+footer .links li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .links li a:hover {
+    border-bottom: 1px solid #007bff;
+}
+
+.footer-navegacao {
+    display: flex;
+}
+
+#sobre-footer {
+    width: 15rem;
+}
+
+footer .redes-sociais {
+    width: 30rem;
+}
+
+.redes-sociais h2 {
+    width: 100%;
+}
+
+footer .redes-sociais li {
+    display: flex;
+    width: auto;
+}
+
+footer .redes-sociais #icons {
+    display: flex;
+    width: 100%;
+}
+
+.redes-sociais img {
+    padding-top: 0.8rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+footer .copy .container {
+    position: relative;
+    bottom: -5rem;
+}
+
+footer .copy .container #copy{
+    position: relative;
+    left: -30rem;
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1025px) {
+    
+    main {
+        padding-top: 3.7rem;
+    }
+    
+
+    h2, h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+    
+    .buttons {
+        display: none;
+    }
+
+    aside li {
+        font-size: 1.4rem;
+    }
+
+    .item-shop {
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 644px) and (max-width: 1023px){
+    .container {
+        width: 99%;
+    }
+
+    main {
+        padding-top: 3.7rem;
+    }
+    
+    nav .login {
+        justify-content: center;
+    }
+
+    .carousel-puro-container {
+        width: 97%;
+    }
+    
+    .buttons {
+        display: none;
+    }
+
+    .carousel-marcas {
+        padding: 0;
+        max-width: 98%;
+    }
+
+    aside ul {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .item-shop {
+        width: 47%;
+    }
+
+    footer{
+        height: 40rem;
+        background-color: black;
+        padding: 0 2rem;
+        color: #fff;
+    }
+
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    footer .copy .container {
+        display: block;
+    }
+
+    footer .copy .container #termos {
+        position: absolute;
+        bottom: -2rem;
+    }
+
+    footer .copy .container #copy {
+        position: relative;
+        left: 0rem;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+@media  screen and (max-width: 643px) {
+    
+    .container {
+        width: 95%;
+        padding: 0 2rem 0 1.5;
+    }
+
+    nav .login {
+        justify-content: center;
+    }
+    
+
+    main {
+        padding-top: 3.5rem;
+    }
+    
+    .carousel-puro-container {
+        width: 90%;
+    }  
+    
+    .coluna-promo {
+        max-width: 90;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    aside ul {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .carousel-marcas {
+        padding: 0;
+        max-width: 95%;
+        overflow-x: hidden;
+    }
+
+    .buttons-marcas {
+        display: none;
+    }
+
+    .item-shop {
+        width: 80%;
+    }
+    
+    .vendas {
+        justify-content: center;
+    }
+
+    footer{
+        height: 50rem;
+        background-color: black;
+        padding: 0 2rem;
+        color: #fff;
+    }
+
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    #sobre-footer {
+        width: 10rem;
+    }
+
+    footer .copy .container {
+        display: block;
+    }
+
+    footer .copy .container #termos {
+        position: absolute;
+        bottom: -2rem;
+    }
+
+    footer .copy .container #copy {
+        position: relative;
+        left: 0rem;
+        text-align: center;
+        z-index: 1;
+    }
+}

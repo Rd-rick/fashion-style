@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>Fashion Style</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span
+                        class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="login"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                                </svg>Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                                    <path
+                                        d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="carouselHome" class="carousel" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagens/1.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/2.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/3.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/4.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/5.png" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="shop">
+        <div class="container">
+            <div class="row promocoes">
+                <div class="col-lg-10 coluna-promo">
+                    <div class="buttons">
+                        <button onclick="prevSlide()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                            </svg></button>
+                        <button onclick="nextSlide()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                            </svg></button>
+                    </div>
+                    <h2>Promoções</h2>
+                    <div class="carousel-puro-container">
+                        <div class="row carousel-puro" id="carousel-puro">
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Azul</h3>
+                                <p>R$350</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Vermelha</h3>
+                                <p>R$300</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Verde</h3>
+                                <p>R$280</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Preta</h3>
+                                <p>R$320</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Azul</h3>
+                                <p>R$350</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Vermelha</h3>
+                                <p>R$300</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Verde</h3>
+                                <p>R$280</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 item-shop item-carousel-puro">
+                                <img src="https://placehold.co/150x150" alt="" />
+                                <h3>Camisa Preta</h3>
+                                <p>R$320</p>
+                                <button type="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="marcas">
+            <div class="container">
+                <h2>Marcas</h2>
+                <p>Trabalhamos com as melhores marcas para proporcionar a melhor qualidade.</p>
+                <div class="marcas-container">
+                    <div class="buttons-marcas">
+                        <button type="button" onclick="prevSlideMarcas()"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                            </svg></button>
+                        <button type="button" onclick="nextSlideMarcas()"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                            </svg></button>
+                    </div>
+                    <div class="carousel-marcas" id="carousel-marcas">
+                        <img src="./imagens/adidas.png" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/Design sem nome (12).png" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/Design sem nome (13).png" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/Design sem nome (14).png" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/joma.webp" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/jordan.webp" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/lacoste.webp" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/nike.png" alt="" class="item-carousel-marcas">
+                        <img src="./imagens/oakley.avif" alt="" class="item-carousel-marcas">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-0 col-sm-0">
+                    <aside>
+                        <h2>Filtros</h2>
+                        <ul>
+                            <li><a href="#">Bones</a></li>
+                            <li><a href="#">Camisas</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Tênis</a></li>
+                            <li><a href="#">Acessorios</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12">
+                    <h2>Roupas</h2>
+                    <div class="row vendas">
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 item-shop">
+                            <img src="https://placehold.co/150x150" alt="" />
+                            <h3>Camisa Azul</h3>
+                            <p>R$350</p>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                    <div class="navegacao-paginas">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg></button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-navegacao">
+                    <div class="links">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="#">Roupas</a></li>
+                            <li><a href="#">acessorios</a></li>
+                            <li><a href="#">Promoções</a></li>
+                        </ul>
+                    </div>
+                    <div class="sobre-footer">
+                        <h2>sobre</h2>
+                        <ul id="sobre-footer">
+                            <p>Aqui, cada detalhe importa, desde a escolha dos tecidos até as últimas tendências da
+                                moda. Navegue, escolha o que combina com você e vista-se com atitude! 🚀</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <h2>Nos Siga nas Redes Sociais</h2>
+                    <p>
+                        Fique por dentro das novidades, lançamentos e promoções exclusivas! Acompanhe a nossa loja nas
+                        redes sociais e compartilhe seu estilo com a gente.
+                    </p>
+                    <ul id="icons">
+                        <li><img src="./imagens/Design sem nome (27).png" alt=""></li>
+                        <li><img src="./imagens/Design sem nome (28).png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <p id="termos">
+                        <a href="">Termos do site</a>
+                    </p>
+                    <P id="copy">&copy; Site desenvolvido para fins de estudo e experimentação.</P>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./main.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
